@@ -1,0 +1,519 @@
+/* =====================================
+   HOME PAGE STYLE
+   Employee Mood AI
+===================================== */
+
+
+/* ---------- Global ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html,
+body{
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+}
+
+
+body{
+
+    background:#eeeeee;
+
+    font-family:
+        "Noto Sans Myanmar",
+        "Pyidaungsu",
+        Arial,
+        sans-serif;
+
+}
+
+
+/* =====================================
+   PAGE GRID
+===================================== */
+
+
+body{
+
+    display:grid;
+
+    grid-template-rows:
+        auto
+        1fr
+        auto;
+
+}
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header{
+
+    background:#003366;
+
+    color:white;
+
+    text-align:center;
+
+    padding:12px;
+
+}
+
+
+header h2{
+
+    font-size:
+    clamp(18px,3vw,28px);
+
+}
+
+
+
+/* =====================================
+   MAIN CONTAINER
+===================================== */
+
+
+.container{
+
+    width:95%;
+
+    max-width:900px;
+
+    margin:auto;
+
+
+    height:100%;
+
+
+    display:grid;
+
+
+    grid-template-rows:
+
+        45%
+        20%
+        20%;
+
+
+    gap:10px;
+
+
+    align-content:center;
+
+}
+
+
+
+/* =====================================
+   PROFILE CARD
+===================================== */
+
+
+.profile-card{
+
+    background:white;
+
+    border-radius:18px;
+
+
+    padding:20px;
+
+
+    display:flex;
+
+    align-items:center;
+
+
+    gap:25px;
+
+
+    box-shadow:
+
+    0 5px 15px rgba(0,0,0,.15);
+
+}
+
+
+
+.photo{
+
+    flex-shrink:0;
+
+}
+
+
+
+.photo img{
+
+
+    width:150px;
+
+    height:150px;
+
+
+    border-radius:50%;
+
+
+    object-fit:cover;
+
+
+}
+
+
+
+.profile{
+
+    flex:1;
+
+}
+
+
+
+.profile h1{
+
+
+    font-size:
+
+    clamp(28px,5vw,45px);
+
+
+    margin-bottom:10px;
+
+
+    word-break:break-word;
+
+
+}
+
+
+
+.profile p{
+
+
+    font-size:
+
+    clamp(14px,2vw,18px);
+
+
+    margin:5px 0;
+
+
+}
+
+
+
+/* =====================================
+   TITLE
+===================================== */
+
+
+.title{
+
+
+    background:white;
+
+
+    border-radius:18px;
+
+
+    padding:15px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    text-align:center;
+
+
+    font-weight:bold;
+
+
+    font-size:
+
+    clamp(18px,3vw,30px);
+
+
+    box-shadow:
+
+    0 3px 10px rgba(0,0,0,.12);
+
+
+}
+
+
+
+/* =====================================
+   CHAT BUTTON
+===================================== */
+
+
+.chat-area{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+}
+
+
+
+.chat-btn{
+
+
+    background:#0b74de;
+
+
+    color:white;
+
+
+    text-decoration:none;
+
+
+    padding:
+
+    18px 40px;
+
+
+    border-radius:50px;
+
+
+    font-size:
+
+    clamp(18px,3vw,25px);
+
+
+    text-align:center;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.chat-btn:hover{
+
+
+    background:#004c99;
+
+
+}
+
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+
+footer{
+
+
+    background:#003366;
+
+
+    color:white;
+
+
+    text-align:center;
+
+
+    padding:10px;
+
+
+    font-size:
+
+    clamp(11px,2vw,15px);
+
+
+}
+
+
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+
+@media(max-width:700px){
+
+
+
+.container{
+
+
+    grid-template-rows:
+
+        50%
+        20%
+        20%;
+
+
+}
+
+
+
+.profile-card{
+
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+
+    text-align:center;
+
+
+    padding:10px;
+
+
+}
+
+
+
+.photo img{
+
+
+    width:90px;
+
+
+    height:90px;
+
+
+}
+
+
+
+.profile h1{
+
+
+    font-size:26px;
+
+
+}
+
+
+
+.profile p{
+
+
+    font-size:14px;
+
+
+}
+
+
+
+.title{
+
+
+    font-size:18px;
+
+
+}
+
+
+
+.chat-btn{
+
+
+    width:80%;
+
+
+    padding:15px;
+
+
+}
+
+
+
+}
+
+
+
+
+/* =====================================
+   SMALL HEIGHT DEVICE
+===================================== */
+
+
+@media(max-height:600px){
+
+
+.photo img{
+
+
+    width:70px;
+
+
+    height:70px;
+
+
+}
+
+
+.profile h1{
+
+
+    font-size:22px;
+
+
+}
+
+
+.profile p{
+
+
+    margin:2px;
+
+
+}
+
+
+.title{
+
+
+    padding:8px;
+
+
+}
+
+
+.chat-btn{
+
+
+    padding:10px 25px;
+
+
+}
+
+
+}
