@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="my">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Mood AI Chat</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='css/chat.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+    <h2>
+
+        Employee Mood Predictive Model
+
+    </h2>
+
+</header>
+
+
+<div class="chat-page">
+
+    <div class="chat-header">
+
+        🤖 ဝန်ထမ်းစိတ်ခံစားချက် ခန့်မှန်းရေး ဉာဏ်ရည်တု
+
+    </div>
+
+
+    <div id="chatbox">
+
+        <!-- JavaScript က Chat Bubble တွေထည့်မယ် -->
+
+    </div>
+
+
+    <div class="back-home">
+
+        <a href="/">
+
+            ⬅ မူလစာမျက်နှာသို့ ပြန်သွားမည်
+
+        </a>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+နိုင်ငံ့ဝန်ထမ်းတက္ကသိုလ်(အထက်မြန်မာပြည်)
+
+<br>
+
+ICT ပညာဌာန
+
+<br>
+
+လက်တွေ့သင်ခန်းစာ
+
+</footer>
+
+
+<script
+src="{{ url_for('static',
+filename='js/chat.js') }}">
+</script>
+
+</body>
+
+</html>
