@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="my">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Mood Predictive Model</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+<xx-small>
+    နိုင်ငံ့ဝန်ထမ်းတက္ကသိုလ်(အထက်မြန်မာပြည်)
+</xx-small>
+    <h2>
+
+        စာရေးဝန်ထမ်းသင်တန်းအမှတ်စဉ်(၁၁၇)
+</h2>
+</h1> ICT ပညာဌာန </h1
+
+<small> လက်တွေ့သင်ခန်းစာ </small>
+</header>
+
+
+<div class="container">
+
+    <div class="profile-card">
+
+        <div class="photo">
+
+            <img
+            src="{{ url_for('static',
+            filename='images/default.png') }}">
+
+        </div>
+
+
+        <div class="profile">
+
+            <h1>
+
+                {{ employee.name }}
+
+            </h1>
+
+            <p>
+
+                <b>Role :</b>
+
+                {{ employee.role }}
+
+            </p>
+
+            <p>
+
+                <b>Rank :</b>
+
+                {{ employee.rank }}
+
+            </p>
+
+            <p>
+
+                <b>Ministry :</b>
+
+                {{ employee.ministry }}
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="title">
+
+        Employee Mood Predictive Model Experiment
+
+    </div>
+
+
+    <div class="chat-area">
+
+        <a href="/chat"
+           class="chat-btn">
+
+            💬
+
+            <br>
+
+            Start AI Chat
+
+        </a>
+
+    </div>
+
+</div>
+
+
+<footer
+
+နိုင်ငံ့ဝန်ထမ်းတက္ကသိုလ်(အထက်မြန်မာပြည်)
+
+
+
+
+
+
+
+</footer>
+
+</body>
+
+</html>
